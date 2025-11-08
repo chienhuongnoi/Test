@@ -32,6 +32,10 @@ namespace MyApp.Controllers
         [HttpGet("GetAllSV")]
         public  IActionResult getAllSV()
         {
+            var a = 6;
+            var b = 7;
+            if (a > 0 && b > 0)
+                Console.WriteLine(a + b);
             return Ok(list);
         }
         [HttpGet("GetById/{id}")]
