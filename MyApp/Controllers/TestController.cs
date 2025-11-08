@@ -36,6 +36,7 @@ namespace MyApp.Controllers
             var b = 7;
             if (a > 0 && b > 0)
                 Console.WriteLine(a + b);
+            Console.WriteLine("DONE");
             return Ok(list);
         }
         [HttpGet("GetById/{id}")]
