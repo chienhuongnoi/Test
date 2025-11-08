@@ -28,5 +28,11 @@ namespace MyApp.Controllers
         {
             return Ok(list);
         }
+        [HttpGet("GetById/{id}")]
+        public IActionResult getById(string id)
+        {
+            var sv = list.FirstOrDefault(s => s.maSV == id);
+            return Ok(sv);
+        }
     }
 }
