@@ -12,9 +12,15 @@ namespace MyApp.Controllers
         {
             list.Add(new SinhVien
             {
-                maSV = "s01",
+                maSV = "s1",
                 tenSV = "Chien",
                 tuoi = 18
+            });
+            list.Add(new SinhVien
+            {
+                maSV = "s02",
+                tenSV = "Hai",
+                tuoi = 21
             });
         }
         [HttpGet("GetAllSV")]
