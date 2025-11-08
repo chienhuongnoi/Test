@@ -22,6 +22,12 @@ namespace MyApp.Controllers
                 tenSV = "Hai",
                 tuoi = 21
             });
+            list.Add(new SinhVien
+            {
+                maSV = "s03",
+                tenSV = "Binh",
+                tuoi = 19
+            });
         }
         [HttpGet("GetAllSV")]
         public  IActionResult getAllSV()
