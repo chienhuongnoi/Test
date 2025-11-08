@@ -34,7 +34,11 @@ namespace MyApp.Controllers
         {
             var a = 6;
             var b = 7;
+<<<<<<< HEAD
+            if (a > 0 && b > 0)
+=======
             if (a > 0)
+>>>>>>> main
                 Console.WriteLine(a + b);
             return Ok(list);
         }
