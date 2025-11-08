@@ -38,7 +38,7 @@ namespace MyApp.Controllers
         public IActionResult getById(string id)
         {
             var sv = list.FirstOrDefault(s => s.maSV == id);
-            if(sv != null)
+            if(sv != null && sv.maSV.Length > 0)
                 return Ok(sv);
             return BadRequest();
         }
